@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: rgb(208, 227, 230);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(0, 141, 173);
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.foto {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.foto:hover {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+    
+.galleri {
+    min-width: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-left: 4em;
+}
+
+@media screen and (max-width: 375px) {
+    .galleri {
+        display: flex;
+        flex-direction: column;
+        align-content:center;
+        margin: 0;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .galleri {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0;
+    }  
+
+    .foto {
+        width: 40em;
+        max-width: 100vw;
+    }
+}
+
+footer {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(0, 141, 173);
+    font-size: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
