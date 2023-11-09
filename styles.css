@@ -28,7 +28,7 @@ header {
 }
     
 .galleri {
-    max-width: 100vh;
+    min-width: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +38,7 @@ header {
 
 @media screen and (max-width: 375px) {
     .galleri {
+        max-width: 100vh;
         display: flex;
         flex-direction: column;
         align-content:center;
@@ -47,6 +48,7 @@ header {
 
 @media screen and (max-width: 768px) {
     .galleri {
+        max-width: 100vh;
         display: flex;
         flex-direction: column;
         align-content: center;
