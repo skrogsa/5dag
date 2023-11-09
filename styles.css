@@ -28,7 +28,7 @@ header {
 }
     
 .galleri {
-    min-width: 100vh;
+    max-width: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,4 +68,4 @@ footer {
     margin-bottom: 3em;
     margin-left: 3em;
     margin-right: 3em;
-}
+}   
